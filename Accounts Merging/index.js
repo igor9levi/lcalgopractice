@@ -1,4 +1,6 @@
 const accounts = require('./accounts.json');
 const accountsMerge = require('./merge');
 
-console.log(accountsMerge(accounts));
+const result = accountsMerge(accounts);
+
+console.log(JSON.stringify(result, null , 2));
